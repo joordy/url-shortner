@@ -8,11 +8,27 @@
     <section class="h-48">
       <h1 class="text-6xl my-8">Jorrr's URL Shortner</h1>
 
-      <form action="" method="POST">
+      <% if (locals.error) { %>
+      <p><%= error %></p>
+      <% } %>
+
+      <form action="/" method="post">
         <label for="">URL:</label>
-        <input type="text" name="submittedURL" id="submittedURL" class="border-solid border-4 border-light-blue-500" />
+        <input
+          type="text"
+          name="url"
+          id="submittedURL"
+          class="border-solid border-4 border-light-blue-500"
+          placeholder="Fill in url"
+        />
         <input type="submit" value="submit" />
       </form>
+
+      <div class="short-url">
+        <% if (locals.short_url) { %>
+        <a href="<%= short_url %>"><%= short_url %> </a>
+        <% } %>
+      </div>
     </section>
   </body>
 </html>
