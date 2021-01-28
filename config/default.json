@@ -1,4 +1,0 @@
-// {
-//   "mongoURI": `${process.env.MONGOKEY}`,
-//   "baseUrl": "http://localhost:5000"
-// }

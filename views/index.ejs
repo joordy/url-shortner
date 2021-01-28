@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <%- include ("partials/head.ejs") %>
-    <title>Document</title>
+    <title>JorrrShortener</title>
   </head>
   <body class="grid place-items-center">
     <section class="h-48">
-      <h1 class="text-6xl my-8">Jorrr's URL Shortner</h1>
+      <h1 class="text-6xl my-8">Jorrr's link shredder</h1>
 
       <% if (locals.error) { %>
       <p><%= error %></p>
@@ -26,7 +26,7 @@
 
       <div class="short-url">
         <% if (locals.short_url) { %>
-        <a href="<%= short_url %>"><%= short_url %> </a>
+        <a href="<%= short_url %>" target="_blank"><%= short_url %> </a>
         <% } %>
       </div>
     </section>
