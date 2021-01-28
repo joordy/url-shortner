@@ -22,6 +22,7 @@ module.exports = {
       },
     },
   },
+  darkMode: 'media',
   variants: {
     extend: {
       borderColor: ['focus-visible'],
