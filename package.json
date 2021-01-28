@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "dev": "nodemon index"
+    "dev": "nodemon index",
+    "tailwind:css": "postcss static/styles/tailwind.css -o static/styles/styles.css"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,16 @@
   },
   "homepage": "https://github.com/joordy/url-shortner#readme",
   "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.2.3",
     "config": "^3.3.3",
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongoose": "^5.11.13",
+    "postcss": "^8.2.4",
+    "postcss-cli": "^8.3.1",
     "shortid": "^2.2.16",
+    "tailwindcss": "^2.0.2",
     "valid-url": "^1.0.9"
   },
   "devDependencies": {
